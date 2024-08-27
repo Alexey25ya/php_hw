@@ -2,7 +2,7 @@
 
 {% if user_authorized %}
 <div>
-<a href="/user/edit">Добавить пользователя</a></div>
+<a href="/user/edit" class="btn btn-info" >Добавить пользователя</a></div>
 {% endif %}
 
 
@@ -35,8 +35,8 @@
                   {% endif %}
               </td>
               {% if user_authorized %}
-                    <td><a href="/user/edit/?user_id={{user.userId}}">Править</a><td>
-                <a href="/user/delete/?user_id={{user.userId}}">Удалить</a>
+                    <td><a href="/user/edit/?user_id={{user.userId}}" class="btn btn-warning">Править</a><td>
+                <a href="/user/delete/?user_id={{user.userId}}" class="btn btn-danger">Удалить</a>
                 {% endif %}
             </tr>
             {% endfor %}

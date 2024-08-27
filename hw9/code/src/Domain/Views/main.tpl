@@ -24,7 +24,7 @@
 
         
 
-         <main class="flex-shrink-0" >
+         <main class="flex-shrink-0" style="min-height: calc(100vh - 200px)">
           <div class="container content-template">
             {% include content_template_name %}
           </div>
